@@ -106,10 +106,6 @@ Stacking is a built-in capability of PoX and occurs through a set of actions on 
 - Multiple leaders can commit to the same chain tip. The leader that wins the election and the peers who also burn for that leader collectively share the reward, proportional to how much each one burned
 - Token holders' locked up tokens automatically unlock as soon as the lockup period finishes
 
-## Stacking contract
-
-Check out the [Stacking contract reference](/references/stacking-contract) to see available methods and error codes.
-
 ## Bitcoin address
 
 :::danger
