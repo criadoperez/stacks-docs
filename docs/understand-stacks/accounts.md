@@ -14,17 +14,23 @@ Stacks 2.0 accounts are entities that own assets, like Stacks (STX) tokens. An a
 
 If you want to jump right in to generate and query a new account, try this tutorial:
 
--> The public-key signature system used for Stacks 2.0 accounts is [Ed25519](https://ed25519.cr.yp.to/).
+:::tip
+The public-key signature system used for Stacks 2.0 accounts is [Ed25519](https://ed25519.cr.yp.to/).
+:::
 
 Assets cannot leave an account without an action from the account owner. All changes to assets (and the balances of the account) require a corresponding transaction.
 
--> The transaction type doesn't need to be a token transfer - contract deploy and contract call transactions can change the balances of an account
+:::tip
+The transaction type doesn't need to be a token transfer - contract deploy and contract call transactions can change the balances of an account
+:::
 
 ## Creation
 
 An account is generated from a 24-word mnemonic phrase. This is often referred to as the **seed phrase**. The seed phrase provides access to Stacks 2.0 accounts.
 
-!> If the seed phrase is lost, access to the associated account cannot be restored. No person or organization, including Blockstack, can recover a lost seed phrase.
+:::danger
+If the seed phrase is lost, access to the associated account cannot be restored. No person or organization, including Blockstack, can recover a lost seed phrase.
+:::
 
 The easiest way to generate a new Stacks 2.0 account is to use the [Stacks CLI](https://github.com/hirosystems/stacks.js/tree/master/packages/cli):
 
@@ -52,7 +58,9 @@ stx make_keychain -t > cli_keychain.json
 }
 ```
 
--> Check out the [Stacks CLI reference](https://docs.hiro.so/references/stacks-cli) for more details
+:::tip
+Check out the [Stacks CLI reference](https://docs.hiro.so/references/stacks-cli) for more details
+:::
 
 | Field                | Description                                                                                                                                                        |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -65,7 +73,9 @@ stx make_keychain -t > cli_keychain.json
 
 Note that a new account automatically exists for each new private key. There is no need to manually instantiate an account on the Stacks 2.0 blockchain.
 
--> Addresses are created by generating the [RIPEMD-160 hash](https://en.wikipedia.org/wiki/RIPEMD#RIPEMD-160_hashes) of the [SHA256](https://en.bitcoinwiki.org/wiki/SHA-256) of the public key. BTC addresses are encoded with [Base58Check](https://en.bitcoin.it/wiki/Base58Check_encoding). For Stacks addresses, [c32check](https://github.com/stacks-network/c32check) is used. Deriving an address from a public key can be done without internet access, for instance using the c32check `c32addressDecode` method.
+:::tip
+Addresses are created by generating the [RIPEMD-160 hash](https://en.wikipedia.org/wiki/RIPEMD#RIPEMD-160_hashes) of the [SHA256](https://en.bitcoinwiki.org/wiki/SHA-256) of the public key. BTC addresses are encoded with [Base58Check](https://en.bitcoin.it/wiki/Base58Check_encoding). For Stacks addresses, [c32check](https://github.com/stacks-network/c32check) is used. Deriving an address from a public key can be done without internet access, for instance using the c32check `c32addressDecode` method.
+:::
 
 Alternatively to the CLI creation, the [Stacks Transactions JS](https://github.com/hirosystems/stacks.js/tree/master/packages/transactions) library can be used:
 
@@ -115,7 +125,9 @@ npx -q stacks-gen sk --testnet
 }
 ```
 
--> The stacking object with hashbytes and a version represents the bitcoin address derived from the Stacks address. Read more about the [bitcoin address format](/understand-stacks/stacking#bitcoin-address).
+:::tip
+The stacking object with hashbytes and a version represents the bitcoin address derived from the Stacks address. Read more about the [bitcoin address format](/understand-stacks/stacking#bitcoin-address).
+:::
 
 Full documentation available at [stacks-gen](https://github.com/psq/stacks-gen).
 
@@ -139,7 +151,9 @@ Sample response:
 }
 ```
 
--> The balance string represents an unsigned 128-bit integer (big-endian) in hex encoding
+:::tip
+The balance string represents an unsigned 128-bit integer (big-endian) in hex encoding
+:::
 
 ### Get all token balances
 
@@ -164,7 +178,9 @@ Sample response:
 }
 ```
 
--> Stacks accounts cannot hold bitcoins. The best way to obtain corresponding BTC balances is to derive the BTC address from the Stacks address (using [`c32check`](https://github.com/stacks-network/c32check#c32tob58-b58toc32)) and query the Bitcoin network.
+:::tip
+Stacks accounts cannot hold bitcoins. The best way to obtain corresponding BTC balances is to derive the BTC address from the Stacks address (using [`c32check`](https://github.com/stacks-network/c32check#c32tob58-b58toc32)) and query the Bitcoin network.
+:::
 
 ### Get all asset events
 

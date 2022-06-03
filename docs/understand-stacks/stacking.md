@@ -12,7 +12,9 @@ Stacking rewards Stacks (STX) token holders with bitcoin for providing a valuabl
 
 Stacking is a built-in action, required by the "proof-of-transfer" (PoX) mechanism. The PoX mechanism is executed by every miner on the Stacks 2.0 network.
 
--> The Stacking consensus algorithm is implemented as a smart contract, using [Clarity](/write-smart-contracts/overview). [Read more about the contract](#stacking-contract).
+:::info
+The Stacking consensus algorithm is implemented as a smart contract, using [Clarity](../write-smart-contracts/overview). [Read more about the contract](#stacking-contract).
+:::
 
 ## Stacking flow
 
@@ -29,7 +31,9 @@ The Stacking mechanism can be presented as a flow of actions:
 7. Once the lockup period is passed, the tokens are released and accessible again
 8. Display reward history, including details like earnings for previous reward cycles
 
--> Keep in mind that the target duration for a reward cycles is ~2 weeks. This duration is based on the target block time of the network (10 minutes) and can be higher at times due to [confirmation time variances](https://www.blockchain.com/charts/median-confirmation-time) of the bitcoin network.
+:::info
+Keep in mind that the target duration for a reward cycles is ~2 weeks. This duration is based on the target block time of the network (10 minutes) and can be higher at times due to [confirmation time variances](https://www.blockchain.com/charts/median-confirmation-time) of the bitcoin network.
+:::
 
 If you would like to implement this flow in your own wallet, exchange, or any other application, please have a look at this tutorial:
 
@@ -56,7 +60,9 @@ The Stacking flow is different for delegation use cases:
 
 PoX mining is a modification of Proof-of-Burn (PoB) mining, where instead of sending the committed Bitcoin to a burn address, it's transferred to eligible STX holders that participate in the stacking protocol.
 
--> A PoX miner can only receive newly minted STX tokens when they transfer Bitcoin to eligible owners of STX tokens
+:::note
+A PoX miner can only receive newly minted STX tokens when they transfer Bitcoin to eligible owners of STX tokens
+:::
 
 ![Mining flow](/img/pox-mining-flow.png)
 
@@ -106,7 +112,9 @@ Check out the [Stacking contract reference](/references/stacking-contract) to se
 
 ## Bitcoin address
 
-!> You must provide a BTC address in one of two formats: [Legacy (P2PKH)](https://en.bitcoin.it/wiki/Transaction#Pay-to-PubkeyHash), which starts with `1`. Or, [Segregated Witness / Segwit (P2SH)](https://en.bitcoin.it/wiki/Pay_to_script_hash), which starts with `3`. The "Native Segwit" format (which starts with "bc1"), for example, is not supported.
+:::danger
+You must provide a BTC address in one of two formats: [Legacy (P2PKH)](https://en.bitcoin.it/wiki/Transaction#Pay-to-PubkeyHash), which starts with `1`. Or, [Segregated Witness / Segwit (P2SH)](https://en.bitcoin.it/wiki/Pay_to_script_hash), which starts with `3`. The "Native Segwit" format (which starts with "bc1"), for example, is not supported.
+:::
 
 The Stacking contract needs a special format for the Bitcoin address (the reward address). This is required to ensure that miners are able to correctly construct the Bitcoin transaction containing the reward address.
 

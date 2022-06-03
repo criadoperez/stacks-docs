@@ -13,7 +13,7 @@ images:
 
 ## Introduction
 
-Make sure you've followed the [Running testnet node](/nodes-and-miners/running-testnet-node) procedure. Once completed it's only a few more steps to run a proof-of-burn miner on the testnet.
+Make sure you've followed the [Running testnet node](running-testnet-node) procedure. Once completed it's only a few more steps to run a proof-of-burn miner on the testnet.
 
 If you want to learn more about the technical details of mining, please review the mining guide:
 
@@ -186,7 +186,9 @@ After this runs, you'll probably see some installation logs, and at the end you 
 }
 ```
 
--> Check out the [Stacks CLI reference](https://docs.hiro.so/references/stacks-cli) for more details
+:::tip
+Check out the [Stacks CLI reference](https://docs.hiro.so/references/stacks-cli) for more details
+:::
 
 Request BTC from faucet:
 
@@ -227,7 +229,9 @@ stacks-node start --config=testnet/stacks-node/conf/testnet-miner-conf.toml
 
 <!-- markdown-link-check-disable -->
 
--> **Note** : While starting the node for the first time, windows defender might pop up with a message to allow access. If so, allow access to run the node.
+:::note
+While starting the node for the first time, windows defender might pop up with a message to allow access. If so, allow access to run the node.
+:::
 ![Windows Defender](/img/windows-defender.png)
 
 <!-- markdown-link-check-enable-->
@@ -248,7 +252,9 @@ stacks-node start --config=testnet-miner-conf.toml
 
 Alternatively, you can run the testnet node with Docker.
 
--> Ensure you have [Docker](https://docs.docker.com/get-docker/) installed on your machine.
+:::warning
+Ensure you have [Docker](https://docs.docker.com/get-docker/) installed on your machine.
+:::
 
 ### Generate keychain and get testnet tokens
 
@@ -287,7 +293,9 @@ Now, grab your `privateKey` from earlier, when you ran the `stx make_keychain` c
 
 ### Start the miner
 
--> The ENV VARS `RUST_BACKTRACE` and `STACKS_LOG_DEBUG` are optional. If removed, debug logs will be disabled
+:::info
+The ENV VARS `RUST_BACKTRACE` and `STACKS_LOG_DEBUG` are optional. If removed, debug logs will be disabled
+:::
 
 ```bash
 docker run -d \

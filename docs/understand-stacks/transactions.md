@@ -10,7 +10,7 @@ images:
 
 ## Introduction
 
-Transactions are the fundamental unit of execution in the Stacks blockchain. Each transaction is originated from a [Stacks 2.0 account](/understand-stacks/accounts), and is retained in the Stacks blockchain history for eternity. This guide helps you understand Stacks 2.0 transactions.
+Transactions are the fundamental unit of execution in the Stacks blockchain. Each transaction is originated from a [Stacks 2.0 account](accounts), and is retained in the Stacks blockchain history for eternity. This guide helps you understand Stacks 2.0 transactions.
 
 ## Lifecycle
 
@@ -25,7 +25,9 @@ Transactions go through phases before being finally confirmed, and available for
 - **Process**: Miners review the mempool and select transactions for the next block to be mined. Depending on the transaction type, different actions can happen during this step. For example, post-conditions could be verified for a token transfer, smart-contract defined tokens could be minted, or an attempt to call an existing smart contract method could be made.
 - **Confirm**: Miners successfully mine blocks with a set of transactions. The transactions inside are successfully propagated to the network.
 
--> A transaction can have one of three states once it is registered: `pending`, `success`, or `failed`.
+:::note
+A transaction can have one of three states once it is registered: `pending`, `success`, or `failed`.
+:::
 
 ## Types
 
@@ -41,4 +43,6 @@ The Stacks 2.0 supports a set of different transaction types:
 
 A sample of each transaction type can be found in the [Stacks Blockchain API response definition for transactions](https://docs.hiro.so/api#operation/get_transaction_by_id).
 
-~> Read-only contract call calls do **not** require transactions. Read more about it in the [network guide](/understand-stacks/network#read-only-function-calls).
+:::caution
+Read-only contract call calls do **not** require transactions. Read more about it in the [network guide](network#read-only-function-calls).
+:::

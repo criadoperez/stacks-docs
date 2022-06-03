@@ -15,7 +15,9 @@ stacks-node sub-command [--subcommand-option <value>]
 
 ## Subcommands
 
--> Note that the `stacks-node` binary may have deprecated commands that are not documented on this page. Deprecated commands may be accessible until they are fully removed from the sources.
+:::note
+The `stacks-node` binary may have deprecated commands that are not documented on this page. Deprecated commands may be accessible until they are fully removed from the sources.
+:::
 
 ### mocknet
 
@@ -29,7 +31,8 @@ stacks-node mocknet
 
 ### krypton
 
-Start a node that will join and stream blocks from the public krypton regtest, powered by Blockstack via [Proof of Transfer](/understand-stacks/overview#proof-of-transfer-pox).
+Start a node that will join and stream blocks from the public krypton regtest, powered by Blockstack via [Proof of Transfer](../understand-stacks#consensus-mechanism).
+sidebar_position: 1
 
 Example:
 
@@ -188,8 +191,6 @@ wait_time_for_microblocks = 15000
 
 The private key to use for mining. Only needed if `miner` is set to `true`.
 
-[See this page for information on how to generate a private key.](/start-mining)
-
 Example:
 
 ```toml
@@ -199,8 +200,6 @@ seed = "replace-with-your-private-key"
 #### local_peer_seed (optional)
 
 The private key to use for signing P2P messages in the networking stack. It differentiates network peers and is used even by non-mining nodes.
-
-[See this page for information on how to generate a private key.](/start-mining)
 
 Example:
 
@@ -212,8 +211,6 @@ local_peer_seed = "replace-with-your-private-key"
 
 Determines whether the stacks-node is running a follower (`false`) or a miner (`true`). Defaults to `false` if omitted.
 
-[See this page for information on how to run a miner.](/start-mining)
-
 Example:
 
 ```toml
@@ -223,8 +220,6 @@ miner = true
 #### mine_microblocks (optional)
 
 Determines whether the stacks-node will mine microblocks. Will only take effect if `miner` is set to `true`.
-
-[See this page for information on how to run a miner.](/start-mining)
 
 Example:
 
@@ -246,7 +241,9 @@ prometheus_bind = "0.0.0.0:9153"
 
 Contains options for watching events emitted by a local [stacks-blockchain-api](https://github.com/hirosystems/stacks-blockchain-api) service.
 
--> This section can be repeated multiple times.
+:::info
+This section can be repeated multiple times.
+:::
 
 Example:
 
@@ -470,7 +467,9 @@ commit_anchor_block_within = 10000
 
 This section contains configuration options pertaining to the genesis block allocation for an address in micro-STX. If a user changes these values, their node may be in conflict with other nodes on the network and find themselves unable to sync with other nodes.
 
--> This section can repeat multiple times, and thus is in double-brackets. Each section can define only one address. This section is ignored if running a node on mainnet.
+:::info
+This section can repeat multiple times, and thus is in double-brackets. Each section can define only one address. This section is ignored if running a node on mainnet.
+:::
 
 Example:
 

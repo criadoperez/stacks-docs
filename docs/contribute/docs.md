@@ -1,7 +1,6 @@
 ---
-title: How to contribute
+title: Contribute to docs
 description: Learn how this site is built, and how you could contribute to it.
-icon: BlockstackIcon
 images:
   large: /images/contribute.svg
   sm: /images/contribute.svg
@@ -28,7 +27,9 @@ Markdown files. In addition to being able to write JSX in Markdown, it allows th
 Markdown content with React components. This means that we are able to do some pretty complex things while a
 contributor only has to know how to write Markdown.
 
--> **Don't know what Markdown is?** Here is a [helpful guide](https://guides.github.com/features/mastering-markdown/) for learning it.
+:::tip Don't know what Markdown is?
+Here is a [helpful guide](https://guides.github.com/features/mastering-markdown/) for learning it.
+:::
 
 ## Getting started
 
@@ -51,7 +52,9 @@ When working locally with the site, a few things are needed:
 - [`node` + `npm`,](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and [`yarn` installed](https://yarnpkg.com/getting-started/install) on your machine.
 - Some kind of code editor, such as VSCode, Sublime, or WebStorm.
 
--> This project requires at least Node version 12
+:::note
+This project requires at least Node version 12
+:::
 
 ### Working with GitHub
 
@@ -132,7 +135,9 @@ description: A short, concise sentence describing what is on this page
 Frontmatter gives us the ability to define some things within a page that the site can use, such as a page title or page description.
 When adding any new page, please include a `title` and `description`.
 
--> **Did you know?** The term _Frontmatter_ comes from the section in a book at the beginning detailing things like: publisher’s name and address, copyright information, table of contents, etc.
+:::tip Did you know?
+The term _Frontmatter_ comes from the section in a book at the beginning detailing things like: publisher’s name and address, copyright information, table of contents, etc.
+:::
 
 ### Dynamic sidebar
 
@@ -262,30 +267,60 @@ Which will render:
         (ok u1)))
 ```
 
-### Alerts
+### Admonitions
 
-We use another remark plugin to generate certain kinds of alerts inline in our documentation.
+You can use the following admonitions to highlight content.
 
 ```md
-> This is a standard blockquote (non-alert).
+:::note
+Some **content** with _markdown_ `syntax`. Check [this `api`](#).
+:::
 
--> This will be a standard note style alert.
+:::tip
+Some **content** with _markdown_ `syntax`. Check [this `api`](#).
+:::
 
-=> This will be a success style alert.
+:::info
+Some **content** with _markdown_ `syntax`. Check [this `api`](#).
+:::
 
-~> This will be a warning style alert
+:::caution
+Some **content** with _markdown_ `syntax`. Check [this `api`](#).
+:::
 
-!> This will be a danger style alert
+:::danger
+Some **content** with _markdown_ `syntax`. Check [this `api`](#).
+:::
 ```
 
 Which renders:
 
-> This is a standard blockquote (non-alert).
+:::note
 
--> This will be a standard note style alert.
+Some **content** with _markdown_ `syntax`. Check [this `api`](#).
 
-=> This will be a success style alert.
+:::
 
-~> This will be a warning style alert
+:::tip
 
-!> This will be a danger style alert
+Some **content** with _markdown_ `syntax`. Check [this `api`](#).
+
+:::
+
+:::info
+
+Some **content** with _markdown_ `syntax`. Check [this `api`](#).
+
+:::
+
+:::caution
+
+Some **content** with _markdown_ `syntax`. Check [this `api`](#).
+
+:::
+
+:::danger
+
+Some **content** with _markdown_ `syntax`. Check [this `api`](#).
+
+:::

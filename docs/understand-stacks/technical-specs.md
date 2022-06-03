@@ -15,7 +15,7 @@ sidebar_position: 10
   - Stacks Miners package transactions into blocks, mine them through a Bitcoin transaction, propagate them, and if they win the block race, append microblocks to their winning block until the next block is mined. The next block confirms the microblock stream.
   - Stacks Holders may alter the calculation of block limits (subject to a miner veto) and may vote to disable Proof-of-Transfer rewards for a reward cycle.
 - Transactions are considered final when the corresponding "block commit" transaction on Bitcoin is finalized. Typically this can by 3-6 confirmations.
-- For more details, see [Proof of Transfer](/understand-stacks/proof-of-transfer).
+- For more details, see [Proof of Transfer](proof-of-transfer).
 
 ## Proof of Transfer Mining
 
@@ -29,7 +29,7 @@ sidebar_position: 10
 - Reward maturity window: 100 blocks, meaning leaders will earn the coinbase reward 100 blocks after the block they successfully mine.
 - Block interval: Stacks blockchain produces blocks at the same rate as the underlying burnchain. For Bitcoin, this is approximately every 10 minutes.
 - BTC commitment: Miners must commit at least 11,000 satoshis (5,500 sats / [UTXO output](https://learnmeabitcoin.com/technical/utxo)); 2 outputs / block) to avoid "dust."
-- For more details, see [Mining](/understand-stacks/mining).
+- For more details, see [Mining](mining).
 
 ## Stacking
 
@@ -52,7 +52,7 @@ sidebar_position: 10
 - Nonce counts number of times an account has authorized a transaction. Starts at 0, valid authorization must include the _next_ nonce value.
 - Assets are a map of all asset types -- STX, any on-chain assets specified by a Clarity contract (for example NFTs) -- to quantities owned by that account.
 - Accounts need not be explicit "created" or registered; all accounts implicitly exist and are instantiated on first-use.
-- Further reading: [Accounts](/understand-stacks/accounts)
+- Further reading: [Accounts](accounts)
 
 ## Transactions
 
@@ -62,7 +62,7 @@ sidebar_position: 10
   1. _originating account_ is the account that creates, _authorizes_ and sends the transaction
   2. _paying account_ is the account that is billed by the leader for the cost of validating and executing the transaction
   3. _sending account_ is the account that identifies who is currently executing the transaction: this can change as a transaction executes via the `as-contract` Clarity function
-- Transactions can be batched or streamed into blocks. The behavior can be controlled by the anchor mode of a transaction. With streaming ([microblocks](/understand-stacks/microblocks)), a faster confirmation time is possible.
+- Transactions can be batched or streamed into blocks. The behavior can be controlled by the anchor mode of a transaction. With streaming ([microblocks](microblocks)), a faster confirmation time is possible.
 - Two types of authorizations: standard authorization is where originating account is the same as paying account. _Sponsored_ authorization is where originating account and paying account are distinct. For instance, developers or service providers could pay for users to call their smart-contracts.
 - For sponsored authorization, first a user signs with the originating account and then a sponsor signs with the paying account.
 - Mempool limit for concurrent pending transactions is 25 per account

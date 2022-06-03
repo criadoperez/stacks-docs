@@ -19,7 +19,7 @@ Stacks provides three main functions for building apps:
 
 - **Authentication**: Register and sign users in with identities on the Stacks blockchain
 - **Transaction signing**: Prompt users to sign and broadcast transactions to the Stacks blockchain
-- **Data storage**: Save and retrieve data for users with [Gaia](/gaia/overview)
+- **Data storage**: Save and retrieve data for users with [Gaia](../gaia)
 <!-- markdown-link-check-enable-->
 
 All three of these integrations can be used together to create powerful new user experiences that rival or exceed those of traditional apps—all while protecting your users' digital rights.

@@ -11,7 +11,7 @@ images:
 ## Introduction
 
 Microblocks are a protocol-level feature of the Stacks blockchain that solve the technical challenge of transaction
-latency. Because each Stacks block is anchored to a Bitcoin block through the [Proof-of-Transfer consensus mechanism][],
+latency. Because each Stacks block is anchored to a Bitcoin block through the [Proof-of-Transfer consensus mechanism](../understand-stacks/proof-of-transfer),
 Stacks is necessarily limited to the same block times as the Bitcoin network. Microblocks allow the Stacks blockchain to
 perform state transitions between anchor blocks.
 
@@ -20,7 +20,7 @@ still inheriting the security of Bitcoin.
 
 ## Transaction states
 
-The [Stacks block production model][] is described in SIP-001. The standard outlines the mechanism by which elected
+The [Stacks block production model](https://github.com/stacksgov/sips/blob/main/sips/sip-001/sip-001-burn-election.) is described in SIP-001. The standard outlines the mechanism by which elected
 block leaders can produce blocks on the Stacks blockchain either by batching transactions or by streaming them.
 Microblocks are the product of the streaming model.
 
@@ -56,8 +56,10 @@ tells you when you've sent a transaction or received one. With smart contracts, 
 straightforward, because smart contracts do not just transfer inputs to outputs, they may call other contracts, emit
 events, or perform other computations. A transaction processed in a microblock generates all that information.
 
--> If a transaction is dependent on a chain state that could by altered by previous transactions with serious
+:::tip
+If a transaction is dependent on a chain state that could by altered by previous transactions with serious
 implications, you should carefully consider whether it should be performed using microblocks.
+:::
 
 ## Enabling microblocks
 
@@ -74,7 +76,7 @@ an anchor block or a microblock, or is eligible for either.
 ### Mining
 
 Stacks miners must enable microblocks in their miner configuration to implement the block streaming model. For more
-information, see [mining microblocks][].
+information, see [mining microblocks](../understand-stacks/mining#microblocks).
 
 ## Developing with microblocks
 
@@ -93,8 +95,10 @@ preference for transactions.
 
 ### API
 
-!> API support for microblocks is a work-in-progress. Review the [API documentation][microblocks_api] carefully to
+:::danger
+API support for microblocks is a work-in-progress. Review the [API documentation][microblocks_api] carefully to
 ensure that you are up-to-date on the latest implementation details for microblocks.
+:::
 
 The Stacks Blockchain API exposes microblocks through several endpoints. Please review the
 [Stacks Blockchain API guide][] for more details.
@@ -139,9 +143,6 @@ transaction as confirmed may be fine. For example, storing data on the chain, or
 applications, such as the transfer of real value, waiting for 3-confirmations would be prudent before displaying the
 state as confirmed.
 
-[proof-of-transfer consensus mechanism]: /understand-stacks/proof-of-transfer
-[stacks block production model]: https://github.com/stacksgov/sips/blob/main/sips/sip-001/sip-001-burn-election.md#operation-as-a-leader
-[mining microblocks]: /understand-stacks/mining#microblocks
 [anchormode]: https://stacks.js.org/enums/transactions.AnchorMode.html
 [stacks blockchain api guide]: https://docs.hiro.so/get-started/stacks-blockchain-api#microblocks-support
 [provides an endpoint]: https://docs.hiro.so/get-started/stacks-blockchain-api#nonce-handling

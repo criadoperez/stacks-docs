@@ -13,7 +13,7 @@ images:
 
 ## Introduction
 
-Make sure you've followed the [Running mainnet node](/nodes-and-miners/running-mainnet-node) procedure. Once completed it's only a few more steps to run a proof-of-burn miner on the mainnet.
+Make sure you've followed the [Running mainnet node](running-mainnet-node) procedure. Once completed it's only a few more steps to run a proof-of-burn miner on the mainnet.
 
 If you're interested in mining on the testnet, you can find instructions on how to do that here:
 
@@ -163,7 +163,7 @@ STACKS_LOG_DEBUG=1 stacks-node mainnet
 
 ### Prerequisites
 
-Make sure are [running a node](/nodes-and-miners/running-mainnet-node) and [running bitcoind locally](#running-bitcoind-locally) before starting this tutorial.
+Make sure are [running a node](running-mainnet-node) and [running bitcoind locally](#running-bitcoind-locally) before starting this tutorial.
 
 ### Generate keychain and get mainnet tokens in Windows
 
@@ -193,7 +193,9 @@ After this runs, you'll probably see some installation logs, and at the end you 
 }
 ```
 
--> Check out the [Stacks CLI reference](https://docs.hiro.so/references/stacks-cli) for more details
+:::tip
+Check out the [Stacks CLI reference](https://docs.hiro.so/references/stacks-cli) for more details
+:::
 
 The above BTC address will then need to be imported into the BTC network.
 
@@ -237,7 +239,9 @@ To start your miner, run this in the command line:
 stacks-node start --config=testnet/stacks-node/conf/mainnet-miner-conf.toml
 ```
 
--> **Note** : While starting the node for the first time, windows defender might pop up with a message to allow access. If so, allow access to run the node.
+:::note
+While starting the node for the first time, windows defender might pop up with a message to allow access. If so, allow access to run the node.
+:::
 ![Windows Defender](/img/windows-defender.png)
 
 Your node should start. It will take some time to sync, and then your miner will be running.
@@ -256,7 +260,9 @@ stacks-node start --config=mainnet-miner-conf.toml
 
 Alternatively, you can run the mainnet node with Docker.
 
--> Ensure you have [Docker](https://docs.docker.com/get-docker/) installed on your machine.
+:::caution
+Ensure you have [Docker](https://docs.docker.com/get-docker/) installed on your machine.
+:::
 
 ### Generate keychain and get tokens
 
@@ -296,7 +302,9 @@ Now, grab your `privateKey` from earlier, when you ran the `stx make_keychain` c
 
 ### Start the miner
 
--> The ENV VARS `RUST_BACKTRACE` and `STACKS_LOG_DEBUG` are optional. If removed, debug logs will be disabled
+:::info
+The ENV VARS `RUST_BACKTRACE` and `STACKS_LOG_DEBUG` are optional. If removed, debug logs will be disabled
+:::
 
 ```bash
 docker run -d \

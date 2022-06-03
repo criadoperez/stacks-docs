@@ -1,7 +1,8 @@
 ---
-title: Overview
+title: Contribute
 description: Contribute to the Stacks ecosystem.
-icon: BlockstackIcon
+sidebar_position: 8
+sidebar_lagel: "Contribute"
 images:
   large: /images/contribute.svg
   sm: /images/contribute.svg

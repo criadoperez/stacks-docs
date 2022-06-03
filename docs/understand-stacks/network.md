@@ -37,7 +37,9 @@ The API will respond with the fee rate (as integer):
 - contract deploys (`estimateContractDeploy`)
 - non read-only contract calls (`estimateContractFunctionCall`)
 
--> For an implementation using a different language than JavaScript, please review [this reference implementation](https://github.com/hirosystems/stacks.js/blob/master/packages/transactions/src/builders.ts#L97).
+:::tip
+For an implementation using a different language than JavaScript, please review [this reference implementation](https://github.com/hirosystems/stacks.js/blob/master/packages/transactions/src/builders.ts#L97).
+:::
 
 ## Nonces
 
@@ -45,11 +47,15 @@ Every account carries a [nonce property](https://en.wikipedia.org/wiki/Cryptogra
 
 Nonces are added to all transactions and help identify them in order to ensure transactions are processed in order and to avoid duplicated processing.
 
--> The consensus mechanism also ensures that transactions aren't "replayed" in two ways. First, nodes query its unspent transaction outputs (UTXOs) in order to satisfy their spending conditions in a new transaction. Second, messages sent between nodes review sequence numbers.
+:::tip
+The consensus mechanism also ensures that transactions aren't "replayed" in two ways. First, nodes query its unspent transaction outputs (UTXOs) in order to satisfy their spending conditions in a new transaction. Second, messages sent between nodes review sequence numbers.
+:::
 
 When a new token transfer transaction is constructed, the most recent nonce of the account needs to fetched and set.
 
--> The API provides an endpoint to [simplify nonce handling](https://docs.hiro.so/get-started/stacks-blockchain-api#nonce-handling).
+:::tip
+The API provides an endpoint to [simplify nonce handling](https://docs.hiro.so/get-started/stacks-blockchain-api#nonce-handling).
+:::
 
 ## Confirmations
 
@@ -57,9 +63,11 @@ The Stacks 2.0 network is anchored onto the bitcoin network. This allows transac
 
 The time to mine a block, to confirm transactions, will eventually match the expected "block time" of the bitcoin network: 10 minutes.
 
--> Transactions can also be mined in [microblocks](/understand-stacks/microblocks), reducing the latency significantly.
+:::tip
+Transactions can also be mined in [microblocks](microblocks), reducing the latency significantly.
+:::
 
-The block time is hardcoded and will change throughout the implementation phases of the [testnet](/understand-stacks/testnet). The current block time can be obtained through the [`GET /extended/v1/info/network_block_times`](https://docs.hiro.so/api#operation/get_network_block_times) endpoint:
+The block time is hardcoded and will change throughout the implementation phases of the [testnet](testnet). The current block time can be obtained through the [`GET /extended/v1/info/network_block_times`](https://docs.hiro.so/api#operation/get_network_block_times) endpoint:
 
 ```bash
 # for mainnet, replace `testnet` with `mainnet`
@@ -85,7 +93,9 @@ Smart contracts can expose public function calls. For functions that make state 
 
 However, for read-only function calls, transactions are **not** required. Instead, these calls can be done using the [Stacks Blockchain API](https://docs.hiro.so/get-started/stacks-blockchain-api).
 
--> Read-only function calls do not require transaction fees
+:::tip
+Read-only function calls do not require transaction fees
+:::
 
 A read-only contract call can be done using the [`POST /v2/contracts/call-read/<stx_address>/<contract_name>/<function_name>`](https://docs.hiro.so/api#operation/call_read_only_function) endpoint:
 
@@ -108,7 +118,9 @@ Sample response for a successful call:
 }
 ```
 
--> To set the function call arguments and read the result, [Clarity values](/write-smart-contracts/values) need to be serialized into a hexadecimal string. The [Stacks Transactions JS](https://github.com/hirosystems/stacks.js/tree/master/packages/transactions) library supports these operations
+:::tip
+To set the function call arguments and read the result, [Clarity values](../write-smart-contracts/values) need to be serialized into a hexadecimal string. The [Stacks Transactions JS](https://github.com/hirosystems/stacks.js/tree/master/packages/transactions) library supports these operations
+:::
 
 ## Querying
 

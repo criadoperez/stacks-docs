@@ -19,7 +19,10 @@ Read more about the features provided by the Stacks 2.0 blockchain.
 
 <!-- markdown-link-check-disable -->
 
--> Check out the [technical specifications](technical-specs) for a brief overview
+:::tip
+Check out the [technical specifications](technical-specs) for a brief overview
+:::
+
 
 <!-- markdown-link-check-enable-->
 
@@ -67,7 +70,10 @@ for predictability and security.
 
 Stacks 2.0 anchors clarity smart contracts to Bitcoin making it possible for smart contracts to operate based on actions seen on the bitcoin blockchain.
 
--> The [Clarity open-source project](https://clarity-lang.org/) is supported by Stacks and [Algorand](https://www.algorand.com/)
+:::tip
+The [Clarity open-source project](https://clarity-lang.org/) is supported by Stacks and [Algorand](https://www.algorand.com/)
+:::
+
 
 Clarity is distinct from other languages designed for writing smart contracts in a few ways:
 

@@ -10,7 +10,9 @@ images:
 
 The Stacks 2.0 Blockchain API allows you to query the Stacks 2.0 blockchain and interact with smart contracts. It was built to maintain pageable materialized views of the Stacks 2.0 Blockchain.
 
-~> The RESTful API is developed by Hiro. Hiro also hosts a public API node for easy onboarding. Using it requires you to trust the hosted server, but provides a faster onboarding experience. You can [run your own API server](https://docs.hiro.so/get-started/running-api-node)
+:::caution
+The RESTful API is developed by Hiro. Hiro also hosts a public API node for easy onboarding. Using it requires you to trust the hosted server, but provides a faster onboarding experience. You can [run your own API server](https://docs.hiro.so/get-started/running-api-node)
+:::
 
 The RESTful JSON API can be used without any authorization. The basepath for the API is:
 
@@ -19,7 +21,9 @@ The RESTful JSON API can be used without any authorization. The basepath for the
 https://stacks-node-api.testnet.stacks.co/
 ```
 
--> This documentation only covers endpoints that are exposed on a Stacks node, referred to as the RPC API. For full documentation on the RESTful API, check out the [Hiro's API reference](https://docs.hiro.so/api).
+:::note
+This documentation only covers endpoints that are exposed on a Stacks node, referred to as the RPC API. For full documentation on the RESTful API, check out the [Hiro's API reference](https://docs.hiro.so/api).
+:::
 
 ### Stacks Node RPC API
 
@@ -31,7 +35,9 @@ All `/v2/` routes a proxied to a Hiro-hosted Stacks Node. For a trustless archit
 
 The Stacks 2.0 Blockchain API is centrally hosted. However, every running Stacks node exposes an RPC API, which allows you to interact with the underlying blockchain. Instead of using a centrally hosted API, you can directly access the RPC API of a locally hosted Node.
 
--> The Stacks Blockchain API proxies to Node RPC endpoints
+:::tip
+The Stacks Blockchain API proxies to Node RPC endpoints
+:::
 
 While the Node RPC API doesn't give the same functionality as the hosted Stacks 2.0 Blockchain API, you get similar functionality in a way that is scoped to that specific node. The RPC API includes the following endpoints:
 
@@ -44,4 +50,6 @@ While the Node RPC API doesn't give the same functionality as the hosted Stacks 
 - [GET /v2/fees/transfer](https://docs.hiro.so/api#operation/get_fee_transfer)
 - [GET /v2/info](https://docs.hiro.so/api#operation/get_core_api_info)
 
-~> If you run a local node, it exposes an HTTP server on port `20443`. The info endpoint would be `localhost:20443/v2/info`.
+:::caution
+If you run a local node, it exposes an HTTP server on port `20443`. The info endpoint would be `localhost:20443/v2/info`.
+:::

@@ -69,7 +69,9 @@ const config = {
             position: 'left',
             label: 'Main',
           },
+          /*
           {to: '/blog', label: 'Blog', position: 'left'},
+          */
           {
             href: 'https://github.com/stacks-network/docs',
             label: 'GitHub',
@@ -88,7 +90,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Main docs',
                 to: '/docs/intro',
               },
             ],
@@ -97,8 +99,8 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/stacks',
+                label: 'Forum',
+                href: 'https://forum.stacks.org/',
               },
               {
                 label: 'Discord',
@@ -120,6 +122,14 @@ const config = {
               {
                 label: 'GitHub',
                 href: 'https://github.com/stacks-network/docs',
+              },
+              {
+                label: 'Mailing List',
+                href: 'https://stacks.org/updates',
+              },
+              {
+                label: 'Youtube',
+                href: 'https://www.youtube.com/channel/UC3J2iHnyt2JtOvtGVf_jpHQ',
               },
             ],
           },
