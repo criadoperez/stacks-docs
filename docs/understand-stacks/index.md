@@ -28,9 +28,8 @@ Check out the [technical specifications](technical-specs) for a brief overview
 
 A detailed [comparison of the Stacks blockchain to other blockchain technologies][] is available at the Stacks
 Foundation blog.
-
 ### Consensus mechanism
-
+![](/img/pages/stacking.svg)
 Stacks 2.0 implements a new mining mechanism called Proof of Transfer ("PoX").
 PoX is a consensus algorithm between two blockchains. It uses an established blockchain (in this case Bitcoin) to secure a new blockchain (Stacks).
 
@@ -39,17 +38,16 @@ PoX connects to Bitcoin with a 1:1 block ratio, meaning anything that happens on
 Instead of burning electricity on proof of work, PoX reuses already minted bitcoins as "proof of computation" and
 miners represent their cost of mining in bitcoins directly.
 
-[@page-reference | inline]
-| /understand-stacks/proof-of-transfer
 
+[Read more about Proof of Transfer](proof-of-transfer)
 ### Mining
 
+![](/img/pages/testnet-sm.svg)
 Mining is required to make the network usable, trustworthy, and secure. Miners verify incoming transactions, participate in the consensus mechanism, and write new blocks to the blockchain.
 
 To incentivize mining, miners receive freshly minted Stacks (STX) tokens if they win the bid for becoming the leader of the next round.
 
-[@page-reference | inline]
-| /understand-stacks/mining
+[Read more about Mining](mining)
 
 ### Stacking
 
@@ -60,17 +58,17 @@ reward based on their holdings of Stacks and participation in the Stacking algor
 
 Stackers have to lock up their Stacks (STX) tokens for a certain period of time.
 
-[@page-reference | inline]
-| /understand-stacks/stacking
+[Read more about Stacking](stacking)
 
 ### Smart contracts
 
+![](/img/pages/write-smart-contracts-sm.svg)
 Clarity is a new language for smart contracts on the Stacks 2.0 blockchain. The Clarity smart contract language optimizes
 for predictability and security.
 
 Stacks 2.0 anchors clarity smart contracts to Bitcoin making it possible for smart contracts to operate based on actions seen on the bitcoin blockchain.
 
-:::tip
+:::note
 The [Clarity open-source project](https://clarity-lang.org/) is supported by Stacks and [Algorand](https://www.algorand.com/)
 :::
 
@@ -81,14 +79,15 @@ Clarity is distinct from other languages designed for writing smart contracts in
 - **Security**: The Clarity language allows users to supply their own conditions for transactions that ensure that a contract may never unexpectedly transfer a token owned by a user.
 - **No compiler**: Contracts written in Clarity are broadcasted on the Stacks blockchain exactly as they are written by developers. This ensures that the code developers wrote, analyzed, and tested, is exactly what gets executed.
 
-[@page-reference | inline]
-| /write-smart-contracts/overview
+[Read more about Clarity](../write-smart-contracts/clarity-language/)
 
 ## Guides
 
 Read one of our guides to understand the ins and outs of the Stacks 2.0 blockchain.
 
-[@page-reference | grid-small]
-| /understand-stacks/accounts, /understand-stacks/transactions, /understand-stacks/network, /understand-stacks/microblocks
+* [Account](../understand-stacks/accounts)
+* [Transactions](../understand-stacks/transactions)
+* [Network](../understand-stacks/network)
+* [Microblocks](../understand-stacks/microblocks)
 
 [comparison of the stacks blockchain to other blockchain technologies]: https://stacks.org/stacks-blockchain

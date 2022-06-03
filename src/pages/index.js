@@ -7,6 +7,9 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 import styles from './index.module.css';
 
+//Added to redirect the main page to the docs
+import {Redirect} from '@docusaurus/router';
+
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -28,6 +31,9 @@ function HomepageHeader() {
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
+  //Changed return to redirect to docs directly
+  return <Redirect to="/docs/intro" />;
+  /*
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
@@ -38,4 +44,6 @@ export default function Home() {
       </main>
     </Layout>
   );
+  */
 }
+
