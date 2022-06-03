@@ -73,7 +73,7 @@ represents. The use of NFTs are myriad, including digital art, collectibles, dom
 ownership of content rights. NFTs can be used as digital certificates that track the authenticty of real world items, or
 digitize the ownership rights to property.
 
-As with fungible tokens, NFTs on the Stacks blockchain are created with [smart contracts][]. [SIP-009][] specifies the
+As with fungible tokens, NFTs on the Stacks blockchain are created with smart contracts. [SIP-009][] specifies the
 standard for NFTs on the Stacks blockchain. This specification defines the functions and traits that an NFT _must_ have,
 but most NFTs have more functions or traits attached than those solely described by the specification. By complying with
 this standard, non-fungible tokens on Stacks can be easily represented by wallets that support Stacks.
@@ -89,7 +89,7 @@ aligned on. With support for this standard across wallets and tools, it becomes 
 - A URI to metadata associated with a specific token identifier. (`get-token-uri`). This URI could resolve to a JSON
   file with information about the creator, associated media files, descriptions, signatures, and more.
 - Ability to verify the owner for a given token identifier (`get-owner`). The owner resolves to a
-  [Stacks principal](/write-smart-contracts/principals).
+  [Stacks principal](principals).
 - Ability to transfer an NFT to a recipient (`transfer`). The recipient is required to be a Stacks principal.
 
 ## Further reading
@@ -99,6 +99,5 @@ aligned on. With support for this standard across wallets and tools, it becomes 
 
 [fungible]: #fungible-tokens
 [non-fungible]: #non-fungible-tokens-nfts
-[smart contracts]: /write-smart-contracts/overview
 [sip-010]: https://github.com/stacksgov/sips/blob/main/sips/sip-010/sip-010-fungible-token-standard.md
 [sip-009]: https://github.com/stacksgov/sips/blob/main/sips/sip-009/sip-009-nft-standard.md

@@ -17,7 +17,7 @@ They are two different ways to colaborate to the docs:
 
 This page outlines how this site is built, its general structure, getting it running locally, and some helpful tips for using all of its features.
 
-These steps should only be followed to make changes on the general structure of the site and documents written in English. **To make changes in other languages**, please refer to [translations](/contribute/translations) instead. This means that in the folder `/src/pages/` you should an make changes in `/src/pages/en`, as changes in any other locale (`/src/pages/es` or `/src/pages/fr` for example) are overwritten.
+These steps should only be followed to make changes on the general structure of the site and documents written in English. **To make changes in other languages**, please refer to [translations](translations) instead. This means that in the folder `/src/pages/` you should an make changes in `/src/pages/en`, as changes in any other locale (`/src/pages/es` or `/src/pages/fr` for example) are overwritten.
 
 ### Next.js, MDX, Markdown
 
@@ -178,7 +178,7 @@ The script will process that file and pull out the title from the frontmatter of
 
 ### Non-standard pages
 
-There are a few pages within these docs that are non-standard markdown pages. This means they are using some kind of external data as their source, such as the [Clarity Reference page](/write-smart-contracts/language-overview), or the [Stacks CLI page](https://docs.hiro.so/references/stacks-cli). These pages are using a function of Next.js called [`getStaticProps`](https://nextjs.org/docs/basic-features/data-fetching#getstaticprops-static-generation) which allows us to fetch external data at runtime and use it in some way within our pages.
+There are a few pages within these docs that are non-standard markdown pages. This means they are using some kind of external data as their source, such as the [Clarity Reference page](../write-smart-contracts/clarity-language/language-keywords), or the [Stacks CLI page](https://docs.hiro.so/references/stacks-cli). These pages are using a function of Next.js called [`getStaticProps`](https://nextjs.org/docs/basic-features/data-fetching#getstaticprops-static-generation) which allows us to fetch external data at runtime and use it in some way within our pages.
 
 ## Tips and tricks
 

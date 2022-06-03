@@ -14,7 +14,7 @@ It produces blocks at roughly the same rate as mainnet; about 1 block every 10 m
 
 ## Testnet API
 
-The hosted [Stacks Blockchain API](/understand-stacks/stacks-blockchain-api) for the testnet is available at this base URL:
+The hosted [Stacks Blockchain API](stacks-blockchain-api) for the testnet is available at this base URL:
 
 ```shell
 https://stacks-node-api.testnet.stacks.co/

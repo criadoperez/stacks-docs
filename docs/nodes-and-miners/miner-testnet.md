@@ -156,7 +156,7 @@ STACKS_LOG_DEBUG=1 stacks-node testnet
 
 ### Prerequisites
 
-Make sure you've followed the [running the testnet node](/nodes-and-miners/running-testnet-node) tutorial before starting this tutorial.
+Make sure you've followed the [running the testnet node](running-testnet-node) tutorial before starting this tutorial.
 
 ### Generate keychain and get testnet tokens in Windows
 

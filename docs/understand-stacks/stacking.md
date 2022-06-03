@@ -13,7 +13,7 @@ Stacking rewards Stacks (STX) token holders with bitcoin for providing a valuabl
 Stacking is a built-in action, required by the "proof-of-transfer" (PoX) mechanism. The PoX mechanism is executed by every miner on the Stacks 2.0 network.
 
 :::info
-The Stacking consensus algorithm is implemented as a smart contract, using [Clarity](../write-smart-contracts/overview). [Read more about the contract](#stacking-contract).
+The Stacking consensus algorithm is implemented as a smart contract, using [Clarity](../write-smart-contracts/). [Read more about the contract](#stacking-contract).
 :::
 
 ## Stacking flow
