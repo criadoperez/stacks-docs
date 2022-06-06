@@ -3,14 +3,13 @@ sidebar_label: "Home"
 sidebar_position: 1
 ---
 
-# Stacks Docs Intro
+# Stacks Docs Introduction
+
+Welcome to the community driven official Stacks Documentation.
 
 Learn about Stacks mining, the STX token, and the Clarity smart contract language.
 
-### [Understand Stacks](understand-stacks)
+![](/img/Bitcoinet-L_2.svg)
 
-### [Write smart contracts](write-smart-contracts)
 
-### [Nodes and miners](Nodes-and-miners)
 
-### [GAIA and more](gaia)

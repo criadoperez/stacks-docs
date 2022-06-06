@@ -2,8 +2,10 @@
 title: FAQs
 description: Frequently Asked Questions
 sidebar_label: "FAQ"
-sidebar_position: 9
+sidebar_position: 7
 ---
+
+![](/img/glasses.png)
 
 ## Why is my transfer still pending?
 

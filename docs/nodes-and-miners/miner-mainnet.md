@@ -15,15 +15,9 @@ images:
 
 Make sure you've followed the [Running mainnet node](running-mainnet-node) procedure. Once completed it's only a few more steps to run a proof-of-burn miner on the mainnet.
 
-If you're interested in mining on the testnet, you can find instructions on how to do that here:
+If you're interested in mining on the testnet, you can find instructions on how to do that [here](miner-testnet):
 
-[@page-reference | inline]
-| /start-mining/testnet
-
-If you want to learn more about the technical details of mining, please review the mining guide:
-
-[@page-reference | inline]
-| /understand-stacks/mining
+If you want to learn more about the technical details of mining, please review the [mining guide](../understand-stacks/mining):
 
 ## Running bitcoind locally
 
@@ -141,15 +135,7 @@ cd ../..
 ./target/release/stacks-node start --config=./mainnet-miner-conf.toml
 ```
 
-For a full reference of subcommands and configuration options used by `stacks-node`, please see this page.
-
-[@page-reference | inline]
-| /references/stacks-node-configuration
-
-To read more about the technical details of mining on the Stacks 2.0 network, have a look at the mining guide:
-
-[@page-reference | inline]
-| /understand-stacks/mining
+To read more about the technical details of mining on the Stacks 2.0 network, have a look at [the mining guide](../understand-stacks/mining).
 
 ### Enable debug logging
 

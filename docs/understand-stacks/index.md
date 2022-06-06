@@ -8,6 +8,7 @@ images:
   sm: /images/nodes.svg
 ---
 
+![](/img/SBC-L-2x-10.png)
 ## Introduction
 
 Stacks 2.0 is a layer-1 blockchain that connects to Bitcoin and brings smart contracts and decentralized apps to it.

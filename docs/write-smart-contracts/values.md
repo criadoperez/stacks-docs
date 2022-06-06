@@ -15,10 +15,7 @@ In order to build web applications that interact with Clarity contracts, you wil
 
 ## Clarity Types
 
-Please see the following page for information on Clarity Types:
-
-[@page-reference | inline]
-| /references/language-types
+Please see the following page for information on [Clarity Types](../write-smart-contracts/clarity-language/language-types).
 
 ## Constructing Clarity Values and accessing their data
 

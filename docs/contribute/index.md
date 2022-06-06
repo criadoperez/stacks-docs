@@ -2,10 +2,7 @@
 title: Contribute
 description: Contribute to the Stacks ecosystem.
 sidebar_position: 8
-sidebar_lagel: "Contribute"
-images:
-  large: /images/contribute.svg
-  sm: /images/contribute.svg
+sidebar_label: "Contribute"
 ---
 
 You can contribute to the Stacks ecosystem in multiple ways:

@@ -2,6 +2,9 @@
 title: BNS Contract
 description: See a detailed list of all functions and error codes of the BNS contract.
 ---
+
+![](/img/satoshi-btc.png)
+
 ## Introduction
 
 The Blockchain Naming System (BNS) is implemented as a smart contract using Clarity.

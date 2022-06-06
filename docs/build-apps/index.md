@@ -1,10 +1,8 @@
 ---
 title: Build apps with Stacks
 description: Authenticate users, sign transactions and store data with the Stacks blockchain
+sidebar_position: 3
 sidebar_label: Build apps
-images:
-  large: /images/pages/build-apps.svg
-  sm: /images/pages/build-apps-sm.svg
 ---
 
 ## Introduction
@@ -26,7 +24,11 @@ All three of these integrations can be used together to create powerful new user
 
 While integration is possible for any type of app, most of the resources available here are for web developers experienced with JavaScript. See [Hiro developer docs](https://docs.hiro.so) for more information on the available app development libraries for Stacks.
 
-## References
+## [References](references)
 
-[@page-reference | grid]
-| /build-apps/references/authentication, /build-apps/references/bns, /build-apps/references/gaia
+[Authentication](references/authentication)
+
+[BNS](references/bns)
+
+[Gaia](../gaia/)
+

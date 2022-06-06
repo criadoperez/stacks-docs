@@ -3,7 +3,7 @@ title: Keywords
 description: See a detailed list of all keywords for the Clarity language.
 ---
 
-
+![](/img/keywords.jpg)
 ## Keyword reference
 
 Detailed list of all keywords for the Clarity language.

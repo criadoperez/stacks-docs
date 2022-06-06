@@ -2,18 +2,18 @@
 title: Stacking
 description: Introduction to the reward mechanism of Proof-of-Transfer
 sidebar_position: 9
-images:
-  sm: /images/pages/stacking-rounded.svg
 ---
 
 ## Introduction
 
 Stacking rewards Stacks (STX) token holders with bitcoin for providing a valuable service to the network by locking up their tokens for a certain time.
 
+![](/img/stacking.png)
+
 Stacking is a built-in action, required by the "proof-of-transfer" (PoX) mechanism. The PoX mechanism is executed by every miner on the Stacks 2.0 network.
 
 :::info
-The Stacking consensus algorithm is implemented as a smart contract, using [Clarity](../write-smart-contracts/). [Read more about the contract](#stacking-contract).
+The Stacking consensus algorithm is implemented as a smart contract, using [Clarity](../write-smart-contracts/). [Read more about the contract](../noteworthy-contracts/stacking-contract).
 :::
 
 ## Stacking flow
@@ -34,14 +34,6 @@ The Stacking mechanism can be presented as a flow of actions:
 :::info
 Keep in mind that the target duration for a reward cycles is ~2 weeks. This duration is based on the target block time of the network (10 minutes) and can be higher at times due to [confirmation time variances](https://www.blockchain.com/charts/median-confirmation-time) of the bitcoin network.
 :::
-
-If you would like to implement this flow in your own wallet, exchange, or any other application, please have a look at this tutorial:
-
-[@page-reference | inline]
-| /understand-stacks/integrate-stacking
-
-[@page-reference | inline]
-| /understand-stacks/stacking-using-CLI
 
 ## Stacking delegation flow
 
@@ -72,9 +64,6 @@ Miners run Stacks nodes with mining enabled to participate in the PoX mechanism.
 - Commitment: registered miners transfer Bitcoin to participate in the election. Committed BTC are sent to a set participating STX token holders
 - Election: a verifiable random function chooses one miner to write a new block on the Stacks blockchain
 - Assembly: the elected miner writes the new block and collects rewards in form of new STX tokens
-
-[@page-reference | inline]
-| /start-mining/mainnet, /start-mining/testnet
 
 ## Token holder eligibility
 

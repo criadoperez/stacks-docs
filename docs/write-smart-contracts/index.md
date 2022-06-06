@@ -3,9 +3,6 @@ title: Clarity overview
 description: Overview and guides for getting started with Clarity
 sidebar_label: Write smart contracts
 sidebar_position: 2
-images:
-  large: /images/contract.svg
-  sm: /images/contract.svg
 ---
 
 ## Introduction
@@ -61,7 +58,8 @@ Note some of the key Clarity language rules and limitations.
 
 For language details and references, see the following:
 
-[@page-reference | grid]
-| /write-smart-contracts/principals, /write-smart-contracts/values, /references/language-overview
+[Clarity language overview](./clarity-language/)
+[Understating Principals](principals)
+[Clarity Values](values)
 
 [clarity visual studio code plugin]: https://marketplace.visualstudio.com/items?itemName=HiroSystems.clarity-lsp

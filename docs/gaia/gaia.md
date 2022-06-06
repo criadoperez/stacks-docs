@@ -1,6 +1,7 @@
 ---
 title: Gaia
 description: Decentralized storage architecture for off-chain data
+sidebar_position: 5
 images:
   large: /images/pages/data-storage.svg
   sm: /images/pages/data-storage-sm.svg
