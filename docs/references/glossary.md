@@ -23,7 +23,7 @@ A discrete group of records written to a blockchain that can effectively be iden
 A database created and shared by the members of a peer-to-peer computer network which each member of that network can independently trust due to the rules governing the database’s creation. A blockchain can therefore be used to replace centralized databases.
 
 #### Blockchain Name System (BNS)
-Replacement for DNS. More info [here](..noteworthy-contracts/bns-contract)
+Replacement for DNS. More info [here](../noteworthy-contracts/bns-contract)
 
 #### Blockstack Browser
 A deprecated application for accessing identity and storage.
