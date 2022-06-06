@@ -158,8 +158,8 @@ const config = {
         */
         redirects: [
           {
-            to: '/https://www.stacks.org',
-            from: '/support',
+            from: '/understand-stacks',
+            to: '/docs/understand-stacks/',
           },
         ],
       },
