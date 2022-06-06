@@ -2,8 +2,6 @@
 title: Stacks Blockchain API
 description: Interacting with the Stacks 2.0 Blockchain via API
 sidebar_position: 11
-images:
-  sm: /images/pages/testnet-sm.svg
 ---
 
 ## Introduction

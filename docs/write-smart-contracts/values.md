@@ -2,9 +2,6 @@
 title: Clarity Values
 description: Learn how to deal with Clarity Values in JavaScript
 sidebar_position: 2
-images:
-  large: /images/pages/write-smart-contracts.svg
-  sm: /images/pages/write-smart-contracts-sm.svg
 ---
 
 ## Introduction

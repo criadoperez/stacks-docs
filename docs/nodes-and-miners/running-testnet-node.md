@@ -1,14 +1,8 @@
 ---
 title: Running a testnet node
 description: Set up and run a testnet node with Docker
-icon: TestnetIcon
-duration: 15 minutes
-experience: beginners
 tags:
   - tutorial
-images:
-  large: /images/cli.svg
-  sm: /images/cli.svg
 ---
 
 ## Introduction

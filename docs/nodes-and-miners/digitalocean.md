@@ -1,8 +1,6 @@
 ---
 title: Stacks on DigitalOcean
 description: A guide to setup Stacks on DigitalOcean
-experience: beginners
-duration: 5 minutes
 tags:
   - tutorial
 ---

@@ -1,6 +1,8 @@
 ---
 title: MacOS
 description: MacOS for local testing/development
+tags:
+  - tutorial
 ---
 
 The following assumes you have [Docker Installed](https://docs.docker.com/docker-for-mac/install/)

@@ -2,15 +2,10 @@
 title: Clarity Language
 description: Overview of the Clarity language constructs
 sidebar_label: Clarity Language
-images:
-  large: /images/pages/write-smart-contracts.svg
-  sm: /images/pages/write-smart-contracts-sm.svg
+tags:
+  - clarity
 ---
 
-<!--Commented on migration to docusaurus
-export { convertClarityRefToMdx as getStaticProps } from '@common/data/clarity-ref';
-import { ClarityKeywordReference, ClarityFunctionReference } from '@components/clarity-ref';
--->
 ## Clarity Type System
 
 The Clarity language uses a strong static type system. Function arguments

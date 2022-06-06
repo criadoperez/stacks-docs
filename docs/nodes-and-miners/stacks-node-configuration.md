@@ -1,10 +1,6 @@
 ---
 title: Stacks Node Configuration
 description: Configuration parameters and options for the stacks-node binary
-icon: TestnetIcon
-images:
-  large: /images/pages/testnet.svg
-  sm: /images/pages/testnet-sm.svg
 ---
 
 ## Usage

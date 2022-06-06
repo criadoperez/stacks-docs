@@ -2,10 +2,6 @@
 title: Tokens
 description: Learn about token support within Clarity
 sidebar_position: 3
-icon: TestnetIcon
-images:
-  large: /images/pages/nft/token.png
-  sm: /images/pages/nft/token.png
 ---
 
 ## Introduction

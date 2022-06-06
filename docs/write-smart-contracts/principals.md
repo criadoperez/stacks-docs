@@ -2,9 +2,6 @@
 title: Principals
 description: 'Clarity: Understanding Principals'
 sidebar_position: 1
-images:
-  large: /images/pages/write-smart-contracts.svg
-  sm: /images/pages/write-smart-contracts-sm.svg
 ---
 
 ## Introduction

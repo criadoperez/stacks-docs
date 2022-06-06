@@ -1,14 +1,8 @@
 ---
 title: Running a mainnet node
 description: Set up and run a mainnet node with Docker
-icon: MainnetIcon
-duration: 15 minutes
-experience: beginners
 tags:
   - tutorial
-images:
-  large: /images/pages/mainnet.svg
-  sm: /images/pages/mainnet-sm.svg
 ---
 
 ## Introduction

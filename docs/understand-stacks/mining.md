@@ -2,10 +2,6 @@
 title: Mining
 description: A guide to mining on Stacks 2.0
 sidebar_position: 4
-icon: TestnetIcon
-images:
-  large: /images/pages/testnet.svg
-  sm: /images/pages/testnet-sm.svg
 ---
 
 ## Introduction

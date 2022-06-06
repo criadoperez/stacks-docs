@@ -1,4 +1,5 @@
 ---
+title: References
 sidebar_label: References
 ---
 

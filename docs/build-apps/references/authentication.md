@@ -1,9 +1,6 @@
 ---
 title: Authentication
 description: Register and sign in users with identities on the Stacks blockchain
-images:
-  large: /images/pages/write-smart-contracts.svg
-  sm: /images/pages/write-smart-contracts-sm.svg
 ---
 
 ## Introduction

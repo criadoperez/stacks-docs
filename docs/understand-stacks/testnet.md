@@ -2,9 +2,6 @@
 title: Testnet
 description: Test your smart contracts and apps
 sidebar_position: 2
-images:
-  large: /images/pages/testnet.svg
-  sm: /images/pages/testnet-sm.svg
 ---
 
 ## About testnet

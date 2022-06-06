@@ -37,14 +37,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/stacks-network/docs/tree/master/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/stacks-network/docs/tree/master/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -141,6 +141,20 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+/*
+    redirects: [
+      // /docs/oldDoc -> /docs/newDoc
+      {
+        to: '/docs/newDoc',
+        from: '/docs/oldDoc',
+      },
+      // Redirect from multiple old paths to the new path
+      {
+        to: '/docs/newDoc2',
+        from: ['/docs/oldDocFrom2019', '/docs/legacyDocFrom2016'],
+      },
+    ],
+*/
 };
 
 module.exports = config;

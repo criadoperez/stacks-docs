@@ -1,9 +1,8 @@
 ---
 title: Types
 description: See a detailed list of all types for the Clarity language.
-images:
-  large: /images/pages/write-smart-contracts.svg
-  sm: /images/pages/write-smart-contracts-sm.svg
+tags:
+  - clarity
 ---
 
 ## Clarity Type System

@@ -2,10 +2,6 @@
 title: Transactions
 description: Guide to Stacks 2.0 transactions
 sidebar_position: 6
-icon: TestnetIcon
-images:
-  large: /images/transaction-signing.svg
-  sm: /images/transaction-signing.svg
 ---
 
 ## Introduction

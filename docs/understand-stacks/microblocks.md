@@ -2,10 +2,6 @@
 title: Microblocks
 description: Guide to Stacks Microblocks
 sidebar_position: 8
-icon: TestnetIcon
-images:
-  large: /images/pages/testnet.svg
-  sm: /images/pages/testnet-sm.svg
 ---
 
 ## Introduction

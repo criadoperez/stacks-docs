@@ -1,9 +1,9 @@
 ---
 title: Amazon EC2
 description: Use a template to deploy a Gaia hub on Amazon EC2
-images:
-  large: /images/pages/data-storage.svg
-  sm: /images/pages/data-storage-sm.svg
+tags:
+  - tutorial
+  - gaia
 ---
 
 ## Introduction

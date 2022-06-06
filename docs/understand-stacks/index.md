@@ -1,11 +1,7 @@
 ---
 title: Understand Stacks
 description: Learn more about the Stacks 2.0 blockchain
-icon: TestnetIcon
 sidebar_position: 1
-images:
-  large: /images/nodes.svg
-  sm: /images/nodes.svg
 ---
 
 ![](/img/SBC-L-2x-10.png)

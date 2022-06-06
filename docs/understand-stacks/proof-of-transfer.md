@@ -2,10 +2,6 @@
 title: Proof of Transfer
 description: Understand the proof-of-transfer consensus mechanism
 sidebar_position: 3
-icon: TestnetIcon
-images:
-  large: /images/stacking.svg
-  sm: /images/stacking.svg
 ---
 
 ## Overview
