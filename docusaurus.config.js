@@ -1,6 +1,8 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
+//import '@docusaurus/plugin-client-redirects';
+
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
@@ -141,20 +143,21 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
-/*
-    redirects: [
-      // /docs/oldDoc -> /docs/newDoc
-      {
-        to: '/docs/newDoc',
-        from: '/docs/oldDoc',
-      },
-      // Redirect from multiple old paths to the new path
-      {
-        to: '/docs/newDoc2',
-        from: ['/docs/oldDocFrom2019', '/docs/legacyDocFrom2016'],
-      },
-    ],
-*/
+
+    /*
+  redirects: [
+    // /docs/oldDoc -> /docs/newDoc
+    {
+      to: '/docs/newDoc',
+      from: '/docs/oldDoc',
+    },
+    // Redirect from multiple old paths to the new path
+    {
+      to: '/docs/newDoc2',
+      from: ['/docs/oldDocFrom2019', '/docs/legacyDocFrom2016'],
+    },
+  ],
+  */
 };
 
 module.exports = config;
