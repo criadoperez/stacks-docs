@@ -163,11 +163,11 @@ const config = {
                 '/ecosystem',
                 '/references/stacks-blockchain',
                 '/stacks-wallet',
-                '/common/core_ref.html',
-                '/org/overview.html',
-                '/org/token.html',
+                //'/common/core_ref.html',
+                //'/org/overview.html',
+                //'/org/token.html',
             ],
-            to: '/docs/',
+            to: '/docs/intro',
           },
           {
             from: [
@@ -200,7 +200,7 @@ const config = {
           {
             from: [
               '/nodes-and-miners/running-testnet-node',
-              '/core/smart/testnet-node.html',
+              //'/core/smart/testnet-node.html',
               '/stacks-blockchain/testnet-node',
               '/understand-stacks/testnet-node',
               '/understand-stacks/running-testnet-node',
@@ -252,11 +252,10 @@ const config = {
               '/build-apps/tutorials/todos',
               '/build-apps/tutorials/public-registry',
               '/build-apps/tutorials/angular',
-              '/build-apps/tutorials/angular',
-              '/browser/todo-list.html',
-              '/develop/zero_to_dapp_1.html',
-              '/browser/hello-blockstack.html',
-              '/develop/collections.html',
+              //'/browser/todo-list.html',
+              //'/develop/zero_to_dapp_1.html',
+              //'/browser/hello-blockstack.html',
+              //'/develop/collections.html',
               '/data-storage/collections',
               '/build-an-app',
               '/data-indexing/overview',
@@ -269,13 +268,13 @@ const config = {
             from: [
               '/build-apps/deploy-tips',
             ],
-            to: '/docs/build-apps/deploy-tips/',
+            to: '/docs/build-apps/deploy-tips',
           },
           {
             from: [
               '/build-apps/nocodeclarity',
             ],
-            to: '/docs/build-apps/nocodeclarity/',
+            to: '/docs/build-apps/nocodeclarity',
           },
           {
             from: [
@@ -285,29 +284,29 @@ const config = {
               '/docs/build-apps/guides/authentication',
               '/authentication/building-todo-app',
               '/data-storage/authentication',
-              '/storage/authentication.html',
-              '/develop/connect/get-started.html',
-              '/develop/connect/overview.html',
-              '/develop/overview_auth.html',
+              //'/storage/authentication.html',
+              //'/develop/connect/get-started.html',
+              //'/develop/connect/overview.html',
+              //'/develop/overview_auth.html',
             ],
             to: '/docs/build-apps/references/authentication',
           },
           {
             from: [
               '/build-apps/references/bns',
-              '/core/naming/introduction.html',
-              '/core/naming/architecture.html',
-              '/core/naming/namespaces.html',
-              '/core/naming/comparison.html',
-              '/core/naming/tutorial_subdomains.html',
-              '/core/naming/search.html',
-              '/core/naming/pickname.html',
-              '/core/naming/creationhowto.html',
-              '/core/naming/resolving.html',
-              '/core/naming/register.html',
-              '/core/naming/manage.html',
-              '/core/naming/subdomains.html',
-              '/core/naming/forks.html',
+              //'/core/naming/introduction.html',
+              //'/core/naming/architecture.html',
+              //'/core/naming/namespaces.html',
+              //'/core/naming/comparison.html',
+              //'/core/naming/tutorial_subdomains.html',
+              //'/core/naming/search.html',
+              //'/core/naming/pickname.html',
+              //'/core/naming/creationhowto.html',
+              //'/core/naming/resolving.html',
+              //'/core/naming/register.html',
+              //'/core/naming/manage.html',
+              //'/core/naming/subdomains.html',
+              //'/core/naming/forks.html',
               '/naming-services',
               '/naming-system',
               '/naming-services/build-profile-search-index',
@@ -346,23 +345,19 @@ const config = {
               '/smart-contracts/hello-world-tutorial',
               '/smart-contracts/counter-tutorial',
               '/smart-contracts/testing-contracts',
-              '/core/smart/tutorial.html',
-              '/core/smart/tutorial-counter.html',
-              '/core/smart/tutorial-test.html',
-              '/core/smart/cli-wallet-quickstart.html',
-              '/core/smart/overview.html',
-              '/develop/connect/use-with-clarity.html',
+              //'/core/smart/tutorial.html',
+              //'/core/smart/tutorial-counter.html',
+              //'/core/smart/tutorial-test.html',
+              //'/core/smart/cli-wallet-quickstart.html',
+              //'/core/smart/overview.html',
+              //'/develop/connect/use-with-clarity.html',
             ],
             to: '/docs/write-smart-contracts/',
           },
           {
-            from: '/references/language-functions',
-            to: '/docs/write-smart-contracts/language-functions',
-          },
-          {
             from: [
               '/write-smart-contracts/principals',
-              '/core/smart/principals.html',
+              //'/core/smart/principals.html',
               '/smart-contracts/principals',
             ],
             to: '/docs/write-smart-contracts/principals',
@@ -370,8 +365,9 @@ const config = {
           {
             from: [
               '/write-smart-contracts/clarity-language',
+              '/write-smart-contracts/language-overview',
               '/core/smart/clarityref',
-              '/core/smart/clarityRef.html',
+              //'/core/smart/clarityRef.html',
               '/references/clarity-language',
               '/references/language-clarity',
               '/smart-contracts/clarity-values',
@@ -383,34 +379,35 @@ const config = {
             to: '/docs/write-smart-contracts/software',
           },
           {
-            from: '/write-smart-contracts/language-overview',
-            to: '/docs/write-smart-contracts/language-overview',
-          },
-          {
             from: '/write-smart-contracts/types',
-            to: '/docs/write-smart-contracts/types',
+            to: '/docs/write-smart-contracts/clarity-language/language-types',
           },
           {
             from: '/write-smart-contracts/language-keywords',
-            to: '/docs/write-smart-contracts/language-keywords',
+            to: '/docs/write-smart-contracts/clarity-language/language-keywords',
           },
           {
-            from: '/write-smart-contracts/language-functions',
-            to: '/docs/write-smart-contracts/language-functions',
+            from: [
+              '/write-smart-contracts/language-functions',
+              '/references/language-functions',
+            ],
+            to: '/docs/write-smart-contracts/clarity-language/language-functions',
           },
           {
             from: [
               '/faq',
               '/faqs/allfaqs',
-              '/faqs/allFAQS.html',
-              '/core/faq_technical.html',
+              //'/faqs/allFAQS.html',
+              //'/core/faq_technical.html',
             ],
-            to: '/docs/faq',
+            to: '/docs/faq/',
           },
           {
             from: [
               '/understand-stacks',
               '/understand-stacks/overview',
+              '/stacks-blockchain',
+              '/stacks-blockchain/sending-tokens',
               '/stacks-blockchain/wire-format',
               '/stacks-blockchain/atlas-how-it-works',
               '/stacks-blockchain/atlas-usage',
@@ -422,19 +419,10 @@ const config = {
               '/stacks-blockchain/atlas/usage',
               '/understand-stacks/atlas/usage',
               '/docs/understand-stacks/atlas-overview',
-              '/core/wire-format.html',
-              '/core/atlas/overview.html',
-              '/core/atlas/howitworks.html',
-              '/core/atlas/howtouse.html',
-            ],
-            to: '/docs/understand-stacks/',
-          },
-          {
-            from: [
-              '/understand-stacks',
-              '/stacks-blockchain/overview',
-              '/stacks-blockchain',
-              '/stacks-blockchain/sending-tokens',
+              //'/core/wire-format.html',
+              //'/core/atlas/overview.html',
+              //'/core/atlas/howitworks.html',
+              //'/core/atlas/howtouse.html',
             ],
             to: '/docs/understand-stacks/',
           },
@@ -480,13 +468,13 @@ const config = {
               '/understand-stacks/network/',
               '/stacks-blockchain/network',
             ],
-            to: '/docs/understand-stacks/network/',
+            to: '/docs/understand-stacks/network',
           },
           {
             from: [
               '/understand-stacks/microblocks/',
             ],
-            to: '/docs/understand-stacks/microblocks/',
+            to: '/docs/understand-stacks/microblocks',
           },          
           {
             from: [
@@ -499,7 +487,7 @@ const config = {
           {
             from: [
               '/understand-stacks/technical-specs',
-              '/org/whitepaper-blockchain.html',
+              //'/org/whitepaper-blockchain.html',
               '/stacks-blockchain/technical-specs',
             ],
             to: '/docs/understand-stacks/technical-specs',
@@ -507,7 +495,7 @@ const config = {
           {
           from: [
             '/understand-stacks/stacks-blockchain-api',
-            '/core/smart/rpc-api.html',
+            //'/core/smart/rpc-api.html',
             '/core/smart/rpc-api',
             '/references/stacks-rpc-api',
           ],
@@ -520,10 +508,8 @@ const config = {
               '/build-apps/references/gaia',
               '/data-storage/storage-write-read',
               '/data-storage/storage-guide',
-              '/data-storage/overview',
               '/data-storage',
               '/data-storage/overview',
-              '/data-storage/indexing-overview',
               '/data-storage/indexing-overview',
               '/data-storage/indexing-server-extras',
               '/data-storage/indexing-collaborate',
@@ -537,28 +523,28 @@ const config = {
               '/data-indexing/server-extras',
               '/data-indexing/collaborate',
               '/data-indexing/models',
-              '/develop/collection-type.html',
-              '/storage/hub-operation.html',
-              '/storage-hubs/hello-hub-choice.html',
-              '/storage/hello-hub-choice.html',
-              '/storage/gaia-admin.html',
-              '/storage/config-schema.html',
-              '/storage/write-to-read.html',
-              '/storage/overview.html',
-              '/develop/storage.html',
-              '/develop/radiks-intro.html',
-              '/develop/radiks-setup.html', 
-              '/develop/radiks-models.html',
-              '/develop/radiks-collaborate.html',
-              '/develop/radiks-server-extras.html',
+              //'/develop/collection-type.html',
+              //'/storage/hub-operation.html',
+              //'/storage-hubs/hello-hub-choice.html',
+              //'/storage/hello-hub-choice.html',
+              //'/storage/gaia-admin.html',
+              //'/storage/config-schema.html',
+              //'/storage/write-to-read.html',
+              //'/storage/overview.html',
+              //'/develop/storage.html',
+              //'/develop/radiks-intro.html',
+              //'/develop/radiks-setup.html', 
+              //'/develop/radiks-models.html',
+              //'/develop/radiks-collaborate.html',
+              //'/develop/radiks-server-extras.html',
             ],
-            to: '/docs/gaia',
+            to: '/docs/gaia/',
           },
           {
             from: [
               '/storage-hubs/amazon-s3-deploy',
-              '/storage/digital-ocean-deploy.html',
-              '/storage/amazon-s3-deploy.html',
+              //'/storage/digital-ocean-deploy.html',
+              //'/storage/amazon-s3-deploy.html',
             ],
             to: '/docs/gaia/deploy-gaia-hub',
           },
@@ -578,7 +564,7 @@ const config = {
             from: [
               '/gaia/setup-on-ec2',
             ],
-            to: '/docs/gaia/setup-on-ec2',
+            to: '/docs/gaia/gaia-on-ec2',
           },
           {
             from: [
@@ -586,6 +572,7 @@ const config = {
             ],
             to: '/docs/gaia/configuration',
           },
+          /*
           {
             from: [
               '/references',
@@ -593,22 +580,17 @@ const config = {
             ],
             to: '/docs/references/',
           },
+          */
           {
             from: [
               '/references/glossary',
               '/references/stx',
-              '/org/terms.html',
+              //'/org/terms.html',
             ],
             to: '/docs/references/glossary',
           },
 
 
-
-
-
-
-
-          
         ],
       },
     ],
