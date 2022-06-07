@@ -1,6 +1,6 @@
 # Website
 
-This website is testing [Docusaurus 2](https://docusaurus.io/),for the Stacks Docs.
+This website is testing [Docusaurus 2](https://docusaurus.io/), for the Stacks Docs.
 
 ### Local Development
 
